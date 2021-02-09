@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',
+    sans-serif;
+}
+
+/******************************************************************************************/
+
+.landing,#donate,#main {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*********************************************************************************************/
+
+.landing{
+    background: url('banner.jpg') no-repeat;
+    background-size: cover;
+}
+
+#tint1{
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100%;
+    padding: 0rem 5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    padding-left: 4rem;
+}
+
+/*********************************************************************************************/
+
+#main{
+    background:#1C1919;
+    padding: 0rem 5rem;
+    
+}
+
+#main h2{
+    font-weight: 500;
+    color: #00D34D;
+    text-align: center;
+    padding: 4rem;
+    font-size: 4rem;
+}
+
+#main p{
+    color : #fff;
+    padding: 2rem 0rem;
+    font-size: 2.2rem;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+/**************************************************************************************/
+
+#donate{
+    background: url('footer.jpg') no-repeat;
+    background-size: cover;
+}
