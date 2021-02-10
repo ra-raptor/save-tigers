@@ -61,9 +61,10 @@ nav ul li{
 .banner a{
     color: #fff;
     text-decoration: none;
+    width: 20rem;
 }
 
-.banner a:hover div{
+.banner div:hover{
     background :#00D34D99;
 }
 
@@ -75,6 +76,7 @@ nav ul li{
     text-align: center;
     border-radius: 1.2rem;
     margin-top: 3rem;
+    font-size: 1.6rem;
 }
 
 h1{
@@ -142,7 +144,7 @@ input[type="text"],input[type="email"],input[type="number"]{
     outline: none;
     border-radius: .2rem;
     margin-bottom: 2rem;
-    padding-left: .5rem;
+    padding: 0rem .5rem;
     background: #D5D5D5;
 }
 
@@ -152,8 +154,8 @@ input:focus{
 
 
 input[type="submit"]{
-    height: 2.8rem;
-    background: transparent;
+    /* height: 2.8rem; */
+    background: #00D34Dbb;
     border: 2px solid #00D34D;
     outline: none;
     margin-top: 1rem;
@@ -161,6 +163,7 @@ input[type="submit"]{
     color: #fff;
     font-size: 1.6rem;
     font-weight: 500;
+    padding: .6rem;
     backdrop-filter: blur(5px);
 }
 input[type="submit"]:hover {
@@ -168,4 +171,165 @@ input[type="submit"]:hover {
 }
 footer{
     text-align: center;
+}
+
+/*******************************************************/
+
+@media screen and (min-width : 300px) and (max-width : 1440px){
+    .landing {
+        background-position: center;
+    }
+    #tint1{
+        padding: 0rem 2rem;
+    }
+    nav{
+        font-size: .9rem;
+    }
+    nav ul li {
+        list-style-type: none;
+        padding-left: .6rem;
+        font-size: .8rem;
+    }
+
+    .banner {
+        /* text-align: center; */
+        padding-top: 5rem;
+    }
+    .banner a {
+        width: 10rem;
+    }
+    h1 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .banner div {
+        width: 15rem;
+        padding: .8rem;
+        border-radius: 1.2rem;
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    #main {
+        padding: 0rem 2rem;
+
+    }
+    #main h2{
+        font-size: 1.6rem;
+        padding: 1.5rem 0rem;
+    }
+    #main p {
+        padding: 1.2rem 0rem;
+        font-size: 1.1rem;
+    }
+    #tint2{
+        padding: 0rem 2rem;
+    }
+    form{
+        padding-top: 5rem;
+        min-width: 260px;
+        text-align: center;
+    }
+    input{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width : 370px) and (max-width : 1440px) {
+    h1{
+        font-size: 2.3rem;
+    }
+    form{
+        min-width: 300px;
+    }
+    #main h2{
+        padding: 3rem 0rem;
+    }
+    #main p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width : 420px) and (max-width : 1440px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    #main h2 {
+        padding: 4rem 0rem;
+    }
+}
+
+@media screen and (min-width : 520px) and (max-width : 1440px) {
+    #tint1 ,#tint2,#main{
+        padding: 0rem 4rem;
+    }
+    nav{
+        font-size: 1rem;
+    }
+    nav ul li {
+        list-style-type: none;
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+    #main h2 {
+        padding: 4rem 0rem;
+        font-size: 2rem;
+    }
+
+    #main p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1440px) {
+    #main p {
+        font-size: 1.5rem;
+    }
+    .banner div{
+        margin: 5rem 0rem;
+    }
+}
+
+@media screen and (min-width : 1024px) and (max-width : 1440px) {
+    #tint1,
+    #tint2,
+    #main {
+        padding: 0rem 5rem;
+    }
+    #main p {
+        font-size: 1.6rem;
+        padding: 2rem 0rem;
+    }
+    .banner {
+        padding-top: 6rem;
+    }
+
+    nav ul li {
+        padding-left: 4rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .banner div{
+        width: 20rem;
+    }
+
+    #main h2{
+        padding: 4rem;
+        font-size: 4rem;
+    }
+    #main p{
+        padding: 1.6rem 0rem;
+        font-size: 1.9rem;
+    }
+    form{
+        text-align: left;
+    }
+    input{
+        text-align: left;
+    }
+    input[type="submit"] {
+        text-align: center;
+    }
 }
