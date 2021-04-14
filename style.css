@@ -8,6 +8,9 @@
     sans-serif;
 }
 
+a{
+    cursor: pointer;
+}
 /******************************************************************************************/
 
 .landing,#donate,#main {
@@ -139,7 +142,7 @@ label{
     padding-bottom: .4rem;
 }
 
-input[type="text"],input[type="email"],input[type="number"]{
+input[type="text"],input[type="email"],input[type="tel"]{
     height: 2.8rem;
     outline: none;
     border-radius: .2rem;

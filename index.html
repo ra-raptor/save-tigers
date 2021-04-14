@@ -11,22 +11,22 @@
     <section class="landing">
         <div id="tint1">
             <nav>
-                <div> <a href="#">SAVE TIGERS</a></div>
+                <div> <a onclick="scrollToSection('tint1')">SAVE TIGERS</a></div>
                 <ul>
                     <li><a href="#">INSTAGRAM</a></li>
-                    <li><a href="#donate">DONATE</a></li>
+                    <li><a onclick="scrollToSection('donate')">DONATE</a></li>
                 </ul>
             </nav>
             <div class="banner">
                 <h1>Mighty tigers <br>hear them roar,<br>for they may<br> be no more.</h1>
-                <a href="#main"><div>READ MORE</div></a>
+                <a class="cta-button" onclick="scrollToSection('main')"><div>READ MORE</div></a>
             </div>
         </div>
     </section>
     <section id="main">
-        <h2>WHY THEY MATTER ?</h2>
-        <p>This big cat is a critical part of ecosystems and cultures. If forests are emptied of every last tiger, all that will remain are distant legends and zoo sightings.</p>
-        <p>As a large predator, the tiger plays a key role in maintaining healthy ecosystems. These ecosystems supply both nature and people with fresh water, food, and health.Securing tiger landscapes could help protect at least nine major watersheds, which regulate and provide freshwater for over 800 million people in Asia.</p>
+        <h2 id="main-title">WHY THEY MATTER ?</h2>
+        <p class="main-para">This big cat is a critical part of ecosystems and cultures. If forests are emptied of every last tiger, all that will remain are distant legends and zoo sightings.</p>
+        <p class="main-para">As a large predator, the tiger plays a key role in maintaining healthy ecosystems. These ecosystems supply both nature and people with fresh water, food, and health.Securing tiger landscapes could help protect at least nine major watersheds, which regulate and provide freshwater for over 800 million people in Asia.</p>
     </section>
     <section id="donate">
         <div id="tint2">
@@ -36,11 +36,16 @@
                 <label for="email">ENTER YOUR EMAIL</label>
                 <input type="email" name="email" id="" placeholder="Enter Email Id">
                 <label for="amount">ENTER AMOUNT</label>
-                <input type="number" name="amount" id="" placeholder="Enter Amount">
+                <input type="tel" name="amount" id="" placeholder="Enter Amount">
                 <input type="submit" value="DONATE">
             </form>
             <footer>&copy; VIKAS SAW</footer>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
